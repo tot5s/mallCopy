@@ -29,15 +29,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <div className="sticky top-0">
-          <Header/>
+        <div className="w-300 mx-auto">
+          <div className="sticky top-0 z-99">
+           <Header/>
+          </div>
           <SubMenu/>
-        </div>
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer/>
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer/>
 
+        </div>
       </body>
     </html>
   );

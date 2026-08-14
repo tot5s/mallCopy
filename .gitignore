@@ -44,3 +44,10 @@ next-env.d.ts
 package-lock.json
 firebase.ts
 
+skills-lock.json
+firestore.indexes.json
+
+
+.agents/
+.claude/
+.firebaserc

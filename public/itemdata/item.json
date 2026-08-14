@@ -1,0 +1,50 @@
+
+{
+  "mainSlide": [
+    {
+      "imageUrl": "https://images.unsplash.com/photo-1485968579580-b6d095142e6e",
+      "title": "Classic Denim",
+      "subTitle": "TIMELESS BLUE",
+      "description": "매일 손이 가는 편안한 핏의 프리미엄 데님 컬렉션",
+      "price": "89,000",
+      "salePrice": "71,200",
+      "id" : "mainImage-1"
+    },
+    {
+      "imageUrl": "https://images.unsplash.com/photo-1496747611176-843222e1e57c",
+      "title": "Soft Knitwear",
+      "subTitle": "AUTUMN ESSENTIAL",
+      "description": "부드러운 촉감과 따뜻한 색감으로 완성한 데일리 니트",
+      "price": "69,000",
+      "salePrice": "55,200",
+      "id" : "mainImage-2"
+    },
+    {
+      "imageUrl": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b",
+      "title": "Tailored Jacket",
+      "subTitle": "MODERN SILHOUETTE",
+      "description": "간결한 실루엣으로 어떤 룩에도 어울리는 테일러드 재킷",
+      "price": "159,000",
+      "salePrice": "127,200",
+      "id" : "mainImage-3"
+    },
+    {
+      "imageUrl": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f",
+      "title": "Weekend Dress",
+      "subTitle": "EFFORTLESS MOOD",
+      "description": "가볍게 흐르는 소재로 완성한 여유로운 주말 스타일",
+      "price": "119,000",
+      "salePrice": "95,200",
+      "id" : "mainImage-4"
+    },
+    {
+      "imageUrl": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "title": "Essential Tee",
+      "subTitle": "EVERYDAY BASIC",
+      "description": "탄탄한 원단과 깔끔한 핏의 기본 반팔 티셔츠",
+      "price": "39,000",
+      "salePrice": "31,200",
+      "id" : "mainImage-5"
+    }
+  ]
+}
