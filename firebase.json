@@ -1,11 +1,13 @@
 {
-  "firestore": {
-    "database": "(default)",
-    "location": "asia-northeast3",
-    "rules": "rules_version = '2';",
-    "indexes": "firestore.indexes.json"
-  },
-  "storage": {
-    "rules": "rules_version = '2';"
+  "apphosting": {
+    "backendId": "my-web-app",
+    "rootDir": "/",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "functions"
+    ]
   }
 }

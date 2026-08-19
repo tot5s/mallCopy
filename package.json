@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "rm -rf .next && npm run build && npx -y firebase deploy --only hosting:totsshopcopy"
   },
+
+  "engines": { "node": "22" },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
     "firebase": "^12.17.1",
@@ -25,4 +28,5 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+  
 }
