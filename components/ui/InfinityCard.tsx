@@ -1,5 +1,7 @@
 import Image from "next/image"
+import Link from "next/link"
 import { useState, useRef, useEffect } from "react"
+
 type CardItem = {
     id: string,
     imageUrl: string,
@@ -47,9 +49,9 @@ export default function InfiityCard({cardItems}: CardItemProps) {
     return (
         <div className="grid grid-cols-4 w-full gap-2">
             {items.map((card, idx) => (
-                <div key={`${card.id}-${idx}`} className="relative aspect-6/9">
-                    <Image src={card.imageUrl} alt={card.title} fill className="object-cover" quality={65} preload={idx === 0}></Image>
-                </div>
+                <Link href={`/product/${card.id}`} key={`${card.id}-${idx}`} className="relative aspect-6/9">
+                    <Image src={'/common/b.png'} alt={card.title} fill className="object-cover bg-cover bg-center" style={{backgroundImage: `url(${card.imageUrl})`}} quality={65} preload={idx === 0}></Image>
+                </Link>
             ))}
 
 
