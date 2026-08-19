@@ -152,6 +152,119 @@ export default function Main() {
     salePrice: 55200,
   },
     ]
+
+    const lookbook = [
+  {
+    id: "item-001",
+    imageUrl:
+      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80",
+    title: "Essential Oversized Shirt",
+    subTitle: "에센셜 오버핏 셔츠",
+    description:
+      "여유로운 실루엣과 깔끔한 디자인으로 데일리하게 활용하기 좋은 오버핏 셔츠입니다.",
+    price: 69000,
+    salePrice: 49000,
+  },
+  {
+    id: "item-002",
+    imageUrl:
+      "https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=800&q=80",
+    title: "Daily Cotton Jacket",
+    subTitle: "데일리 코튼 자켓",
+    description:
+      "가볍고 탄탄한 코튼 소재로 제작되어 간절기부터 초여름까지 활용하기 좋은 자켓입니다.",
+    price: 129000,
+    salePrice: 89000,
+  },
+  {
+    id: "item-003",
+    imageUrl:
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80",
+    title: "Soft Knit Cardigan",
+    subTitle: "소프트 니트 가디건",
+    description:
+      "부드러운 촉감과 자연스러운 컬러감이 돋보이는 베이직 니트 가디건입니다.",
+    price: 79000,
+    salePrice: 59000,
+  },
+  {
+    id: "item-004",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80",
+    title: "Classic Minimal Dress",
+    subTitle: "클래식 미니멀 드레스",
+    description:
+      "군더더기 없는 실루엣으로 다양한 장소에서 세련된 스타일을 연출할 수 있는 원피스입니다.",
+    price: 99000,
+    salePrice: 69000,
+  },
+  {
+    id: "item-005",
+    imageUrl:
+      "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80",
+    title: "Relaxed Wide Pants",
+    subTitle: "릴렉스 와이드 팬츠",
+    description:
+      "편안한 착용감과 와이드한 실루엣으로 데일리룩에 자연스럽게 어울리는 팬츠입니다.",
+    price: 72000,
+    salePrice: 52000,
+  },
+  {
+    id: "item-006",
+    imageUrl:
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80",
+    title: "Modern Basic Tee",
+    subTitle: "모던 베이직 티셔츠",
+    description:
+      "적당히 여유로운 핏과 탄탄한 소재로 단독 또는 레이어드하기 좋은 베이직 티셔츠입니다.",
+    price: 39000,
+    salePrice: 29000,
+  },
+  {
+    id: "item-007",
+    imageUrl:
+      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80",
+    title: "Linen Summer Blazer",
+    subTitle: "린넨 썸머 블레이저",
+    description:
+      "가볍고 통기성이 좋은 린넨 혼방 소재로 여름철에도 부담 없이 착용할 수 있습니다.",
+    price: 139000,
+    salePrice: 99000,
+  },
+  {
+    id: "item-008",
+    imageUrl:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    title: "Essential White Tee",
+    subTitle: "에센셜 화이트 티",
+    description:
+      "매일 손이 가는 깔끔한 화이트 티셔츠로 다양한 스타일링에 활용하기 좋은 아이템입니다.",
+    price: 35000,
+    salePrice: 25000,
+  },
+  {
+    id: "item-009",
+    imageUrl:
+      "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=800&q=80",
+    title: "Urban Denim Jacket",
+    subTitle: "어반 데님 자켓",
+    description:
+      "빈티지한 무드와 현대적인 실루엣을 조합한 데님 자켓으로 캐주얼한 룩에 잘 어울립니다.",
+    price: 109000,
+    salePrice: 79000,
+  },
+  {
+    id: "item-010",
+    imageUrl:
+      "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=800&q=80",
+    title: "Minimal Pleated Skirt",
+    subTitle: "미니멀 플리츠 스커트",
+    description:
+      "자연스럽게 떨어지는 플리츠 라인으로 여성스럽고 세련된 분위기를 연출할 수 있습니다.",
+    price: 68000,
+    salePrice: 48000,
+  },
+    ];
     const mainSlides = slideData.mainSlide
     return (
         <div className="w-full space-y-10">
@@ -211,7 +324,7 @@ export default function Main() {
             <div className="space-y-8">
                 LOOCK BOOK
                 <div>
-                    <InfiityCard/>
+                    <InfiityCard cardItems={lookbook}/>
                 </div>
             </div>
         </div>

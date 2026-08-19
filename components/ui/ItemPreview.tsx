@@ -23,8 +23,8 @@ export default function ItemPreiview({shopItems}: ShopItemProps) {
                 {
                 shopItems.map((item) => (
                     <div key={item.id} className="w-100 h-full relative rounded-xl overflow-hidden">
-                        <div className="w-full h-full">
-                            <Image src={item.imageUrl} alt={item.title} fill className="object-cover"/>
+                        <div className="w-full h-full bg-black">
+                            <Image src={"/common/b.png"} alt={item.title} fill className="object-cover bg-center bg-cover" style={{backgroundImage: `url(${item.imageUrl})`}}/>
                             <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_30%,transparent_70%,rgba(0,0,0,0.7)_100%)] z-10 w-full h-full"></div>
                         </div>
                         <div className="absolute bottom-0 left-0 text-white z-20 px-2 py-3">
