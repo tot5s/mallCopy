@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image"
+import { useEffect, useState } from "react"
 
 
 type ShopItem = {
@@ -16,6 +17,19 @@ type ShopItemProps = {
     shopItems: ShopItem[]
 }
 export default function ItemPreiview({shopItems}: ShopItemProps) {
+    const [items, setItems] = useState(shopItems)
+
+    const resizeImageUrl = (src: string) => {
+
+        const url = new URL(src)
+        url.searchParams.set("w","400")
+        url.searchParams.set("h","400")
+        url.searchParams.set("q", '65')
+        url.searchParams.set("fit", "crop");
+        url.searchParams.set("auto", "format");
+
+        return url.toString()
+    }
 
     return(
         <div className="w-full h-100">
@@ -24,7 +38,7 @@ export default function ItemPreiview({shopItems}: ShopItemProps) {
                 shopItems.map((item) => (
                     <div key={item.id} className="w-100 h-full relative rounded-xl overflow-hidden">
                         <div className="w-full h-full bg-black">
-                            <Image src={"/common/b.png"} alt={item.title} fill className="object-cover bg-center bg-cover" style={{backgroundImage: `url(${item.imageUrl})`}}/>
+                            <Image src={"/common/b.png"} alt={item.title} quality={65} fill className="object-cover bg-center bg-cover" style={{backgroundImage: `url(${resizeImageUrl(item.imageUrl)})`}}/>
                             <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_30%,transparent_70%,rgba(0,0,0,0.7)_100%)] z-10 w-full h-full"></div>
                         </div>
                         <div className="absolute bottom-0 left-0 text-white z-20 px-2 py-3">
